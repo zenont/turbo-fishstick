@@ -10,5 +10,8 @@
   },
   "affected": {
     "defaultBase": "main"
+  },
+  "workspaceLayout": {
+    "libsDir": "modules"
   }
 }

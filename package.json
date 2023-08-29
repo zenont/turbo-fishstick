@@ -1,5 +1,5 @@
 {
-  "name": "turbo-fishstick",
+  "name": "@ztr/turbo-fishstick",
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
