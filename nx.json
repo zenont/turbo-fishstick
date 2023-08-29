@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx-cloud",
       "options": {
-        "cacheableOperations": [],
+        "cacheableOperations": ["server"],
         "accessToken": "ZjU1MjQ5NWItY2Y1Ny00ZmI0LThmZjktZjlhNjNjMzY5M2NlfHJlYWQtd3JpdGU="
       }
     }
@@ -13,5 +13,34 @@
   },
   "workspaceLayout": {
     "libsDir": "modules"
+  },
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "webpack",
+        "babel": true
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "targetDefaults": {
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
+      ]
+    },
+    "test": {
+      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+    }
   }
 }
