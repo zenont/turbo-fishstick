@@ -1,0 +1,7 @@
+{
+    "name": "turbo-fishstick",
+    "private": true,
+    "dependencies": {
+        "nx": "^16.7.4"
+    }
+}
