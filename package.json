@@ -2,7 +2,7 @@
   "name": "@ztr/turbo-fishstick",
   "private": true,
   "scripts": {
-    "dev": "nx run web-host:serve:development"
+    "dev": "nx serve host --open"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
